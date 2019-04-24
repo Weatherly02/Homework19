@@ -11,9 +11,8 @@ public class Runner {
         Function<String, Integer> candy = s -> s.length();
         System.out.println(candy.apply("Hershey"));
 
-        BiFunction<Integer, Integer, Integer> eggs = (Integer r, Integer s) -> (r + s);
-        //(r.length()+ s.length());
-        System.out.println(eggs.apply(6, 6));
+        BiFunction<String, String, Integer> eggs = (r, s) -> (r.length() + s.length());
+        System.out.println(eggs.apply("boiled", "fried"));
 
         Consumer<String> useString = s -> System.out.println(s);
         useString.accept("Waylon");
