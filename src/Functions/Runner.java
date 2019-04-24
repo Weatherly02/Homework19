@@ -9,7 +9,7 @@ public class Runner {
     public static void main(String[] args) {
 
         Function<String, Integer> candy = s -> s.length();
-        System.out.println(candy.apply("Hersheys"));
+        System.out.println(candy.apply("Hershey"));
 
         BiFunction<Integer, Integer, Integer> eggs = (Integer r, Integer s) -> (r + s);
         //(r.length()+ s.length());
